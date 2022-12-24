@@ -1,0 +1,541 @@
+/*common css start*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    @import url:('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+}
+body{
+    font-family: 'Open Sans','sans-self';
+    font-family: 'open sans' 'Roboto';
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+img{
+    display: inline-block;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style-type: none;
+}
+.info h2{
+    color: #566366;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-top: 98px;
+}
+.info p{
+    color: #566366;
+    font-size: 16px;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+.info p b{
+    font-size: 23px;
+    font-weight: 800;
+}
+.gpa{
+    background-color: #2ecc71;
+    text-align: center;
+    color: white;
+    width: 12%;
+    text-transform: uppercase;
+}
+/*common css end*/
+/*nav section atart*/
+nav{
+    background-color: #252d2f;
+    text-align: justify;
+    position: sticky;
+}
+nav div.row{
+    align-items: center;
+}
+nav.logo{
+    width: 15%;
+}
+nav div.menu{
+    width: 80%;
+}
+nav div .menu ul{
+    justify-content: flex-end;
+}
+nav div .menu ul li a{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    padding: 26px 25px;
+    display: inline-block;
+    transition: 0.8s;
+}
+nav div .menu ul li a:hover,
+nav div .menu ul li a.active{
+    color: #2ecc71;
+}
+/*nav section end*/
+
+/*banner section start*/
+#banner{
+    background-image: url(../img/banner\(1\).jpg);
+    height: 1200px;
+    background-size: cover;
+    text-align: center;
+}
+#banner .container{
+    margin: auto;
+}
+#banner h1{
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    width: fit-content;
+    margin: auto;
+    border-left: none;
+    border-right: none;
+}
+#banner a{
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(253, 250, 250);
+    border-color: white;
+    letter-spacing: 1px;
+    padding: 19px 42px;
+    border: 2px solid #fff;
+    transition: 0.7s;
+}
+#banner a:hover{
+    background-color: #2ecc71;
+    color: white;
+    border-radius: 50px;
+}
+/*banner section end*/
+
+
+/*first section start*/
+#about{
+    text-align: center;
+}
+#about .info p{
+    width: 900px;
+}
+#about .about-child{
+    width: 33.33%;
+    padding: 50px 10px;
+    margin: 80px 0;
+}
+#about .about-child .tittle{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 20px 10;
+    text-transform: uppercase;
+}
+#about .about-child .rp{
+    text-align: left;
+    font-size: 18px;
+    color: #989898;
+    margin: auto;
+}
+/*first section end*/
+
+/*about section start*/
+#service .photo{
+    width: 35%;
+    position: relative;
+}
+#service .photo .img{
+    width: 100%;
+    height: 100%;
+}
+#service .photo .img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.7s;
+}
+#service .photo:hover .img:last-child{
+    opacity: 1;
+    visibility: visible;
+}
+#service .container{
+    width: 65%;
+    background-color: #f1f1f1;
+    height: 754px;
+    padding: 1px 100px 100px 100px;
+}
+#service .container p{
+    line-height: 20px;
+}
+#service .service-child{
+    width: 50%;
+}
+#service .service-child .icon{
+    width: 15%;
+    margin-top: 30px;
+}
+#service .service-child .contant{
+    width: 35%;
+}
+#service .info .about{
+    font-weight: 600;
+}
+#service .info .p3{
+    margin-bottom: 55px;
+    color: #919191;
+}
+#service .service-child h5{
+    font-size: 22px;
+    color: #566366;
+    margin: 25px 0;
+}
+#service .service-child .rp{
+    width: 243px; 
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 18px;
+    color: #919191;
+    padding-right: 20px;
+}
+/*about section end*/
+
+
+/*my skill,education,work section start*/
+#skill,
+#education,
+#work{
+    margin-bottom: 50px;
+}
+#education .container .row{
+    border-bottom: 2px solid #919191;
+    padding-bottom: 10%;
+}
+#skill .skill_info,
+#education .skill_info,
+#work .skill_info{
+    width: 50%;
+}
+#skill .skills,
+#education .skills,
+#work .skills{
+    width: 50%;
+    padding-top: 13%;
+}
+#skill a{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    color: #2ecc71;
+    letter-spacing: 1px;
+    margin-top: 60%;
+    padding: 19px 32px;
+    border: 2px solid #2ecc71;
+    transition: 0.7s;
+}
+#skill a:hover{
+    background-color: #2ecc71;
+    color: white;
+    border-color: white;
+    border-radius: 20px;
+}
+#skill .skill,
+#education .skill,
+#work .skill{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#skill .p3,
+#education .p3,
+#work .p3{
+    font-size: 18px;
+    color: #7e8287;
+    padding-right: 10px;
+}
+#skill h3,
+#education h3,
+#work h3{
+    color: #566366;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#skill .inside{
+    background-color: #f1f1f1;
+    width: 100%;
+    margin-top: 5px;
+    height: 30px;
+}
+#skill .outside,
+#skill .outside3{
+    background-color: #2ecc71;
+    width: 90%;
+    color: white;
+    text-align: right;
+    padding-top: 3px;
+    padding-right: 5px;
+    font-weight: 700;
+    height: 30px;
+}
+#skill .outside2{
+    background-color: #2ecc71;
+    width: 80%;
+    color: white;
+    text-align: right;
+    padding-top: 3px;
+    padding-right: 5px;
+    font-weight: 700;
+    height: 30px;
+}
+#skill .outside4{
+    background-color: #2ecc71;
+    width: 70%;
+    color: white;
+    text-align: right;
+    padding-top: 3px;
+    padding-right: 5px;
+    font-weight: 700;
+    height: 30px;
+}
+/*my skill,education,work section end*/
+
+/*resume section start*/
+#resume{
+    background-color: #f1f1f1;
+    text-align: center;
+    height: 400px;
+}
+#resume::after{
+    content: '';
+    transform: rotate(45deg);
+    color: red;
+}
+#resume .info .about{
+    font-size: 30px;
+    letter-spacing: 0px;
+    font-weight: 600;
+}
+#resume .info .about .p4{
+    width: 243px; 
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    padding-right: 20px;
+}
+#resume a{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
+    color: #2ecc71;
+    letter-spacing: 1px;
+    margin-top: 60%;
+    padding: 19px 32px;
+    border: 2px solid #2ecc71;
+    transition: 0.7s;
+}
+#resume a:hover{
+    background-color: #2ecc71;
+    color: white;
+    border-color: white;
+    border-radius: 20px;
+}
+/*resume section end*/
+
+
+/*testimonial section start*/
+#testimonial{
+    background-color: #f1f1f1;
+    text-align: center;
+    height: 400px;
+}
+#testimonial .info .name{
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+#testimonial .info .name .p4{
+    margin-top: 30px;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 600;
+    color: #919191;
+    padding-top: 50%;
+}
+/*testimonial section end*/
+
+/*portfolio section start*/
+#portfolio{
+    padding-top: 05%;
+    margin-bottom: 50px;
+}
+#portfolio h2{
+   color: #566366;
+   font-size: 30px;
+   font-weight: 700;
+   text-align: center;
+   text-transform: uppercase;
+}
+#portfolio .p4{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+    color: #919191;
+}
+#portfolio .row{
+    margin-top: 10%;
+}
+#portfolio .mywork-child{
+    width: 33.33%;
+    position: relative;
+    margin-top: 10px;
+}
+#portfolio .mywork-child img{
+    width: 92%;
+    height: 95%;
+    display: block;
+}
+#portfolio .mywork-child .overlay{
+    position: absolute;
+    left: 0px;
+    right: 28px;
+    top: 0px;
+    bottom: 20px;
+    background-color: rgba(46,204, 113, 0.85);
+    padding: 110px 80px;
+    transition: 0.7s;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+}
+#portfolio .mywork-child .overlay img{
+    margin: auto;
+}
+#portfolio .mywork-child:hover .overlay{
+    border-radius: 0;
+    opacity: 1;
+    visibility: visible;
+}
+/*portfolio section end*/
+
+/*contact section start*/
+#contact{
+    background-color: #252e30;
+    height: 900px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+}
+#contact .contact_info{
+    width: 50%;
+    padding-right: 10px;
+}
+#contact .contact_info .strong{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+#contact .contact_info .p4{
+    font-size: 18px;
+    color: #767879;
+    margin-bottom: 10px;
+}
+#contact .contact_info .contact{
+    width: 10%;
+}
+#contact .contact_info .contact{
+    color: white;
+    font-size: 18px;
+}
+#contact .contact_info .contact_information{
+    width: 90%;
+}
+#contact .contact_info .contact_information .p6{
+    color: #767879;
+    font-size: 18px;
+    padding-left: 30px;
+}
+#contact .contact_form{
+    width: 50%;
+    padding-top: 5%;
+}
+#contact .contact_form label{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+}
+#contact .contact_form input{
+    background-color: #4b5456;
+    width: 100%;
+    height: 54px;
+    border: none;
+    border-radius: 5px;
+}
+#contact .contact_form .textarea{
+    background-color: #4b5456;
+    width: 100%;
+    height: 280px;
+}
+#contact .contact_form button{
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 22px 38px;
+    background-color: #191f21;
+    color: white;
+    margin-top: 30px;
+    transition: 0.7s;
+}
+#contact .contact_form button:hover{
+    background-color: #29784e;
+    border-radius: 30px;
+    color: white;
+}
+/*contact section end*/
+
+/*footer section start*/
+#footer{
+    background-color: #191f21;
+    height: 120px;
+}
+#footer .p7{
+    color: #4b5456;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 40px;
+    text-transform: uppercase;
+}
+#footer .row .icons{
+    margin: auto;
+    width: 10%;
+    align-items: center;
+    
+}
+#footer i{
+    color: #4b5456;
+    transition: 0.7s;
+}
+#footer i:hover{
+    color: white;
+}
+/*footer section end*/
